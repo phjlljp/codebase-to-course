@@ -7,6 +7,21 @@ description: "Turn any codebase into a beautiful, interactive single-page HTML c
 
 Transform any codebase into a stunning, interactive single-page HTML course. The output is a single self-contained HTML file (no dependencies except Google Fonts) that teaches how the code works through scroll-based modules, animated visualizations, embedded quizzes, and plain-English translations of code.
 
+## First-Run Welcome
+
+When the skill is first triggered and the user hasn't specified a codebase yet, introduce yourself and explain what you do:
+
+> **I can turn any codebase into an interactive course that teaches how it works — no coding knowledge required.**
+>
+> Just point me at a project:
+> - **A local folder** — e.g., "turn ./my-project into a course"
+> - **A GitHub link** — e.g., "make a course from https://github.com/user/repo"
+> - **The current project** — if you're already in a codebase, just say "turn this into a course"
+>
+> I'll read through the code, figure out how everything fits together, and generate a beautiful single-page HTML course with animated diagrams, plain-English code explanations, and interactive quizzes. The whole thing runs in your browser — no setup needed.
+
+If the user provides a GitHub link, clone the repo first (`git clone <url> /tmp/<repo-name>`) before starting the analysis. If they say "this codebase" or similar, use the current working directory.
+
 ## Who This Is For
 
 The target learner is a **"vibe coder"** — someone who builds software by instructing AI coding tools in natural language, without a traditional CS education. They may have built this project themselves (without looking at the code), or they may have found an interesting open-source project on GitHub and want to understand how it's built. Either way, they don't yet understand what's happening under the hood.
@@ -38,7 +53,7 @@ The single-file constraint is intentional: one HTML file means zero setup, insta
 
 ### Phase 1: Codebase Analysis
 
-Before writing a single line of course HTML, deeply understand the codebase. Read the key files, trace the data flows, identify the "cast of characters" (main components/modules), and map how they communicate.
+Before writing course HTML, deeply understand the codebase. Read all the key files, trace the data flows, identify the "cast of characters" (main components/modules), and map how they communicate. Thoroughness here pays off — the more you understand, the better the course.
 
 **What to extract:**
 - The 3-6 main "actors" (components, services, modules) and their responsibilities
@@ -75,7 +90,7 @@ Not every codebase needs all 7. A simple CLI tool might only need 4-5 modules. A
 - One or two "aha!" callout boxes with universal CS insights
 - A metaphor that grounds the technical concept in everyday life — but NEVER reuse the same metaphor across modules, and NEVER default to the "restaurant" metaphor (it's overused). Pick metaphors that organically fit the specific concept: a postal system for message passing, a library for databases, a security checkpoint for auth, a film crew for components with different roles, etc. The best metaphors feel *inevitable* for the concept, not forced.
 
-**Present the curriculum outline to the user and ask for approval before building.**
+**Do NOT present the curriculum for approval — just build it.** The user wants a course, not a planning document. Design the curriculum internally, then go straight to generating the HTML. If they want changes, they'll tell you after seeing the result.
 
 ### Phase 3: Build the Course
 
