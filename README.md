@@ -24,18 +24,16 @@ The output is a **single HTML file** — no dependencies, no setup, works offlin
 
 - **Scroll-based modules** with progress tracking and keyboard navigation
 - **Code ↔ Plain English translations** — real code on the left, what it means on the right
-<img width="2216" height="1304" alt="CleanShot 2026-03-22 at 22 13 58@2x" src="https://github.com/user-attachments/assets/fb9e7fac-05c1-4f98-b80c-46543ef81afc" />
+<img width="720" alt="Code translation block" src="https://github.com/user-attachments/assets/fb9e7fac-05c1-4f98-b80c-46543ef81afc" />
 
 - **Animated visualizations** — data flow animations, group chat between components, architecture diagrams
-![CleanShot 2026-03-22 at 22 14 53](https://github.com/user-attachments/assets/20fb403e-7dfd-4a47-989b-bbae86ca8041)
-
+<img width="720" alt="Animated data flow" src="https://github.com/user-attachments/assets/20fb403e-7dfd-4a47-989b-bbae86ca8041" />
 
 - **Interactive quizzes** that test *application* not memorization ("You want to add favorites — which files change?")
-<img width="2156" height="1518" alt="CleanShot 2026-03-22 at 22 16 03@2x" src="https://github.com/user-attachments/assets/57706496-9fa8-457a-8450-3da22789951c" />
-
+<img width="720" alt="Interactive quiz" src="https://github.com/user-attachments/assets/57706496-9fa8-457a-8450-3da22789951c" />
 
 - **Glossary tooltips** — hover any technical term for a plain-English definition
-<img width="2164" height="1372" alt="CleanShot 2026-03-22 at 22 17 55@2x" src="https://github.com/user-attachments/assets/ac2f160a-d73f-4779-97b2-a06fdb5f3227" />
+<img width="720" alt="Glossary tooltip" src="https://github.com/user-attachments/assets/ac2f160a-d73f-4779-97b2-a06fdb5f3227" />
 
   
 - **Warm, distinctive design** — not the typical purple-gradient AI look
