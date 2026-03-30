@@ -653,6 +653,7 @@ p:last-child { margin-bottom: 0; }
 
 /* ── FLOW / DATA FLOW ANIMATION ─────────────────────────────── */
 .flow-animation {
+  position: relative;
   background: var(--color-surface);
   border-radius: var(--radius-lg);
   padding: var(--space-8);
